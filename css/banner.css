@@ -34,3 +34,56 @@
     background: url("../img/Pesquisa.svg");
     background-repeat: no-repeat;
 }
+
+.caixa_tecnologia {
+    background-color: var(--laranja);
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.caixa-pai {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.novidades__input {
+    padding: 0.8em;
+    border-color: var(--azul);
+    border-radius: 20px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.novidades__input::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--azul);
+    background: url("../img/Email.svg");
+    background-repeat: no-repeat;
+}
+
+.banner__novidades {
+    padding: 2.5em 2em;
+    background-color: #fff;
+}
+
+.novidades__titulo {
+    color: rgb(2, 2, 85);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.novidades__texto {
+    color: var(--azul);
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 23px;
+}
