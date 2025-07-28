@@ -102,6 +102,96 @@
       </div>
     </section>
 
+    <div class="card">
+      <div class="card__descricao">
+        <div class="descricao">
+          <h3 class="descricao__titulo">
+            Talvez você também se interesse por...
+          </h3>
+          <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+          <p class="descricao__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="./img/Favoritos.svg" alt="favorito" />
+            </li>
+            <li class="botoes__item">
+              <img src="./img/Compras.svg" alt="add" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="card__imagem-container">
+          <img src="./img/Angular.svg" alt="livro" class="descricao__imagem" />
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Mais vendidos</h2>
+      <div class="swiper swiper-reverse">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/Acessibilidade copy.svg" alt="livro" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/MEAN.svg" alt="livro" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Liderança copy.svg" alt="livro" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/MetricasAgeis.svg" alt="livro" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Arquitetura.svg" alt="livro" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/Tuning.svg" alt="livro" />
+          </div>
+          ...
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <div class="card">
+      <div class="card__descricao">
+        <div class="descricao">
+          <h3 class="descricao__titulo">Autora do Mês</h3>
+          <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+          <p class="descricao__texto">
+            Analista de sistemas e escritora, Juliana é especialista em
+            Front-End.
+          </p>
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="./img/Favoritos.svg" alt="favorito" />
+            </li>
+            <li class="botoes__item">
+              <img src="./img/Compras.svg" alt="adicionar ao carrinho" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="card__imagem-container">
+          <img
+            src="./img/Perfil-escritora 1.png"
+            alt="Juliana Agarikov"
+            class="descricao__imagem"
+          />
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
@@ -110,9 +200,23 @@
         slidesPerView: 3,
         autoplay: {
           delay: 3000,
+          reverseDirection: false,
         },
         pagination: {
           el: ".swiper-pagination",
+          type: "bullets",
+        },
+      });
+      const swiper2 = new Swiper(".swiper-reverse", {
+        speed: 400,
+        spaceBetween: 3,
+        slidesPerView: 3,
+        autoplay: {
+          delay: 3000,
+          reverseDirection: true,
+        },
+        pagination: {
+          el: ".swiper-reverse .swiper-pagination",
           type: "bullets",
         },
       });
