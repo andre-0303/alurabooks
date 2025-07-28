@@ -16,14 +16,15 @@
 }
 
 .banner__pesquisa {
-    padding: 1em;
+    padding: 1em 1em 1em 2.5em;
     background-color: transparent;
     border-color: var(--branco);
     border-radius: 20px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     color: var(--branco);
     font-size: 14px;
+    background: url("../img/Pesquisa.svg") no-repeat 10px center;
 }
 
 .banner__pesquisa::placeholder {
@@ -31,8 +32,6 @@
     font-size: 14px;
     font-weight: 400;
     color: #fff;
-    background: url("../img/Pesquisa.svg");
-    background-repeat: no-repeat;
 }
 
 .caixa_tecnologia {
